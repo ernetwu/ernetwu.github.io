@@ -8,11 +8,9 @@ body{
 }
 
 h1, h2, h3, h4, h5, p{
-    font-family: "Arial";
-    color: #c8d0fa;
+    font-family: "Oxygen";
     margin: 13px;
     padding: 0px;
-    
 }
 
 .navbar{
@@ -48,24 +46,54 @@ h1, h2, h3, h4, h5, p{
     color: #333333;
 }
 
-#homepage-content{
+.homepage-content{
     margin-left:300px;
-    padding:1px 20px;
+    padding:1px;
 }
 
-footer {
+footer{
     background-color: black;
     text-align: center;
     position: sticky;
-    
     height: 50px;
 }
 
-footer a {
+footer a{
     color: white;
     /*position: sticky;*/
     text-decoration: none;
     display: inline-block;
     width: 500px;
     margin-top: 10px;
+}
+
+.intro{
+    text-align: center;
+    font-size: 4vw;
+    color: black;
+    background-color: rgb(228, 229, 241);
+    background-image: url(../img/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    margin: 50px;
+    padding-top:200px;
+    padding-bottom:200px;
+    border-radius: 50px;
+}
+
+.section{
+    font-family: "Roboto";
+    border-radius: 25px;
+    background: #cfe8f5;
+    color: #000;
+    padding-left: 20px;
+    width: 90%;
+    height: 80px; 
+    margin: 50px;
+    line-height: 80px;
+}
+
+.eric{
+    padding-left: 50px;
 }
