@@ -1,33 +1,31 @@
 
 const navbar = document.getElementById('navbar')
+const navbaIitems = document.getElementById('navbar')
 const overlay = document.getElementById('overlay')
-const hamburger = document.getElementById('hamburger')
-let menuOpened = false
+const navbarItem = document.getElementsByClassName('navbar-item')
 
 
 function openNavBar() {
-    menuOpened = true
     overlay.style.display = 'block'
     navbar.style.width = '250px'
 }
 
 function closeNavBar() {
-    const hamburger = document.getElementById('hamburger')
-    menuOpened = false
     overlay.style.display = 'none'
     navbar.style.width = '0px'
 }
 
 hamburger.addEventListener('click', function() {
-    if (!menuOpened) {
-        openNavBar()
-    }
+    openNavBar()
 
 })
 
 overlay.addEventListener('click', function() {
-    if (menuOpened) {
-        closeNavBar()
-    }
-
+    closeNavBar()
 })
+
+for (var itemIndex = 0 ; itemIndex < navbarItem.length; itemIndex++) {
+    navbarItem[itemIndex].addEventListener('click', function() {
+        closeNavBar()
+    })
+}
