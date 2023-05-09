@@ -77,8 +77,8 @@ footer a{
     background-size: cover;
     background-blend-mode: darken;
     margin: 50px;
-    padding-top:200px;
-    padding-bottom:200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     border-radius: 50px;
 }
 
@@ -92,8 +92,22 @@ footer a{
     height: 80px; 
     margin: 50px;
     line-height: 80px;
+    clear: both;
 }
 
-.eric{
-    padding-left: 50px;
+.imgmyself{
+    float: left;
+    width: 200px;
+    height: 200px; 
+    border: 5px solid #99d1f0;
+    margin-left: 50px;
+}
+
+.aboutmyself{
+    margin-left: 400px;
+    color: white;
+}
+
+.skillssection{
+    margin-top: 300px;
 }
