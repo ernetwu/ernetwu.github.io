@@ -7,7 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #585959;
+    background-color: #513a82;
 }
 
 h1, h2, h3, h4, h5, p{
@@ -46,10 +46,10 @@ h1, h2, h3, h4, h5, p{
 
 .navbar-item{
     text-decoration: none;
-    display: flex;
+    display: block; /*block allows to edit margins/alignment*/
     color: white;
     padding: 10px 20px;
-    text-align: center;
+    text-align: right;
 }
 
 .navbar-item:hover{
@@ -78,6 +78,75 @@ h1, h2, h3, h4, h5, p{
     margin: 0px;
 }
 
+#intro{
+    text-align: center;
+    font-size: 4vw;
+    color: black;
+    background-color: rgb(228, 229, 241);
+    background-image: url(../img/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    margin: 50px 20% 50px 20%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    border-radius: 50px;
+}
+
+#intro-sub{
+    position: relative;
+}
+
+#intro-sub::before, #intro-sub::after{
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+
+#intro-sub::before{
+    background-color: burlywood;
+    animation: typewriter 4s steps(48, end) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+.section{
+    font-family: "Roboto";
+    border-radius: 25px;
+    background: #cfe8f5;
+    color: #000;
+    padding-left: 20px;
+    width: 90%;
+    height: 80px; 
+    margin-left: 100px;
+    line-height: 80px;
+    clear: both;
+}
+
+.imgmyself{
+    float: left;
+    width: 200px;
+    height: 200px; 
+    border: 5px solid #99d1f0;
+    margin-left: 100px;
+}
+
+.aboutmyself{
+    margin-left: 400px;
+    color: white;
+}
+
+.skillssection{
+    margin-top: 300px;
+}
+
 footer{
     background-color: black;
     text-align: center;
@@ -92,49 +161,4 @@ footer a{
     display: inline-block;
     width: 500px;
     margin-top: 10px;
-}
-
-.intro{
-    text-align: center;
-    font-size: 4vw;
-    color: black;
-    background-color: rgb(228, 229, 241);
-    background-image: url(../img/background1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    margin: 50px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    border-radius: 50px;
-}
-
-.section{
-    font-family: "Roboto";
-    border-radius: 25px;
-    background: #cfe8f5;
-    color: #000;
-    padding-left: 20px;
-    width: 90%;
-    height: 80px; 
-    margin: 50px;
-    line-height: 80px;
-    clear: both;
-}
-
-.imgmyself{
-    float: left;
-    width: 200px;
-    height: 200px; 
-    border: 5px solid #99d1f0;
-    margin-left: 50px;
-}
-
-.aboutmyself{
-    margin-left: 400px;
-    color: white;
-}
-
-.skillssection{
-    margin-top: 300px;
 }
