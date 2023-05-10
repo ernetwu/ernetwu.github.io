@@ -3,7 +3,7 @@ const navbar = document.getElementById('navbar')
 const navbaIitems = document.getElementById('navbar')
 const overlay = document.getElementById('overlay')
 const navbarItem = document.getElementsByClassName('navbar-item')
-
+const text = document.querySelector('.what-am-i');
 
 function openNavBar() {
     overlay.style.display = 'block'
@@ -29,3 +29,17 @@ for (var itemIndex = 0 ; itemIndex < navbarItem.length; itemIndex++) {
         closeNavBar()
     })
 }
+
+const textLoad = () => {
+    setTimeout(() => {
+        text.textContent = "Mechatronic Engineering Student";
+    }, 0);
+    setTimeout(() => {
+        text.textContent = "Music Producer";
+    }, 4050);
+
+    
+}
+
+textLoad();
+setInterval(textLoad,8000);

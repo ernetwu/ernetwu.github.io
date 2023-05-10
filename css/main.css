@@ -1,22 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
 } 
-html{
+html {
     
     scroll-behavior: smooth;
 }
-body{
-    background-color: #513a82;
+body {
+    background-color: black;
+    color: white;
 }
 
-h1, h2, h3, h4, h5, p{
+h1, h2, h3, h4, h5, p {
     font-family: "Oxygen";
     margin: 13px;
     padding: 0px;
 }
 
-#hamburger{
+#hamburger {
     fill:white;
     position: fixed;
     margin: 10px;
@@ -28,7 +29,7 @@ h1, h2, h3, h4, h5, p{
 
 
 
-#navbar{
+#navbar {
     font-family: "Tahoma";
     list-style-type: none;
     width: 0px; /*Default closed*/
@@ -44,7 +45,7 @@ h1, h2, h3, h4, h5, p{
     white-space: nowrap; /*Stops words from going to next line when closing*/
 }
 
-.navbar-item{
+.navbar-item {
     text-decoration: none;
     display: block; /*block allows to edit margins/alignment*/
     color: white;
@@ -52,12 +53,12 @@ h1, h2, h3, h4, h5, p{
     text-align: right;
 }
 
-.navbar-item:hover{
+.navbar-item:hover {
     background-color: #787777;
     color: #333333;
 }
 
-.navbar-item:active{
+.navbar-item:active {
     background-color: #787777;
     color: #333333;
 }
@@ -73,51 +74,139 @@ h1, h2, h3, h4, h5, p{
     z-index: 1;
 }
 
-#homepage-content{
+#homepage-content {
     padding: 1px;
     margin: 0px;
 }
 
-#intro{
-    text-align: center;
-    font-size: 4vw;
-    color: black;
-    background-color: rgb(228, 229, 241);
+#intro {
+    text-align: left;
+    font-size: 2vw;
+    color: white;
+    /* background-color: rgb(228, 229, 241);
     background-image: url(../img/background1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: darken;
+    background-blend-mode: darken; */
     margin: 50px 20% 50px 20%;
     padding-top: 200px;
     padding-bottom: 200px;
     border-radius: 50px;
 }
 
-#intro-sub{
+
+
+.text{
     position: relative;
 }
 
-#intro-sub::before, #intro-sub::after{
-    content: '';
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.im-a{
+    color:#513a82;
+}
+
+/* Creates the cursor*/
+.what-am-i::before { 
+    content: "";
     position: absolute;
+    top: 0;
+    left: 0;
+    height:110%;
+    width: 100%;
+    background-color: #000;
+    border-left: 2px solid rgb(255, 255, 255);
+    animation: animate 4s steps(25) infinite;
 }
 
-#intro-sub::before{
-    background-color: burlywood;
-    animation: typewriter 4s steps(48, end) forwards;
-}
 
-@keyframes typewriter {
-    to {
+@keyframes animate {
+    40%, 60%{
         left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+/* adasd
+
+
+#intro-sub1{
+    animation: text1;
+    animation-duration: 10s;
+}
+
+#intro-sub2{
+    animation: text2;
+    animation-duration: 6s;
+}
+
+#intro-sub1, #intro-sub2 {
+    display: inline-block;
+    white-space:nowrap;
+    overflow: hidden;
+    position: relative;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+}
+
+#intro-sub1::after, #intro-sub2::after {
+    content: "|";
+    position: absolute;
+    right: 0px;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+}
+
+@keyframes text1 {
+0%, 50%, 100% {
+    width: 0;
+}
+10%, 40% {
+    width: 37vw;
+}
+}
+
+@keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+        width: 17vw;
     }
 }
 
-.section{
+
+
+@keyframes caret {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes blink {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.section {
     font-family: "Roboto";
     border-radius: 25px;
     background: #cfe8f5;
@@ -130,7 +219,7 @@ h1, h2, h3, h4, h5, p{
     clear: both;
 }
 
-.imgmyself{
+.imgmyself {
     float: left;
     width: 200px;
     height: 200px; 
@@ -138,23 +227,23 @@ h1, h2, h3, h4, h5, p{
     margin-left: 100px;
 }
 
-.aboutmyself{
+.aboutmyself {
     margin-left: 400px;
     color: white;
 }
 
-.skillssection{
+.skillssection {
     margin-top: 300px;
 }
 
-footer{
+footer {
     background-color: black;
     text-align: center;
     position: sticky;
     height: 50px;
 }
 
-footer a{
+footer a {
     color: white;
     /*position: sticky;*/
     text-decoration: none;
