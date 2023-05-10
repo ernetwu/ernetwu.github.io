@@ -6,6 +6,7 @@ html {
     
     scroll-behavior: smooth;
 }
+
 body {
     background-color: black;
     color: white;
@@ -26,8 +27,6 @@ h1, h2, h3, h4, h5, p {
     cursor: pointer;
     z-index: 1;
 }
-
-
 
 #navbar {
     font-family: "Tahoma";
@@ -94,8 +93,6 @@ h1, h2, h3, h4, h5, p {
     border-radius: 50px;
 }
 
-
-
 .text{
     position: relative;
 }
@@ -117,7 +114,6 @@ h1, h2, h3, h4, h5, p {
     animation: animate 4s steps(25) infinite;
 }
 
-
 @keyframes animate {
     40%, 60%{
         left: 100%;
@@ -125,85 +121,6 @@ h1, h2, h3, h4, h5, p {
     100% {
         left: 0%;
     }
-}
-/* adasd
-
-
-#intro-sub1{
-    animation: text1;
-    animation-duration: 10s;
-}
-
-#intro-sub2{
-    animation: text2;
-    animation-duration: 6s;
-}
-
-#intro-sub1, #intro-sub2 {
-    display: inline-block;
-    white-space:nowrap;
-    overflow: hidden;
-    position: relative;
-    animation-timing-function: steps(25, end);
-    animation-iteration-count: infinite;
-}
-
-#intro-sub1::after, #intro-sub2::after {
-    content: "|";
-    position: absolute;
-    right: 0px;
-    animation: caret infinite;
-    animation-duration: 1s;
-    animation-timing-function: steps(1, end);
-}
-
-@keyframes text1 {
-0%, 50%, 100% {
-    width: 0;
-}
-10%, 40% {
-    width: 37vw;
-}
-}
-
-@keyframes text2 {
-    0%, 50%, 100% {
-      width: 0;
-    }
-    
-    60%, 90% {
-        width: 17vw;
-    }
-}
-
-
-
-@keyframes caret {
-    0%, 100% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@keyframes blink {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
 }
 
 .section {
