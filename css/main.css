@@ -10,6 +10,9 @@ html {
 body {
     background-color: black;
     color: white;
+
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -21,11 +24,27 @@ h1, h2, h3, h4, h5, p {
 #hamburger {
     fill:white;
     position: fixed;
-    margin: 10px;
     height: 80px;
     width: 80px;
+    margin-top: 2vw;
+    margin-left: -8%;
     cursor: pointer;
     z-index: 1;
+}
+
+#seperator {
+    height: 60px;
+    width: 60px;
+    margin-left: 50%;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    transform: scale(4, 1);
+    transition: transform .5s ease;
+}
+
+#seperator:hover {
+    transform: scale(7, 1);
+    
 }
 
 #navbar {
@@ -79,26 +98,28 @@ h1, h2, h3, h4, h5, p {
 }
 
 #intro {
+    
     text-align: left;
     font-size: 2vw;
     color: white;
+    padding-top: 40vh;
+    padding-bottom: 30vh;
+    padding-left: 20vw;
     /* background-color: rgb(228, 229, 241);
     background-image: url(../img/background1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken; */
-    margin: 50px 20% 50px 20%;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    border-radius: 50px;
+    /* margin: 50px 20% 50px 20%; */
+    /* border-radius: 50px; */
 }
 
-.text{
+.intro-text{
     position: relative;
 }
 
 .im-a{
-    color:#513a82;
+    color:#574284;
 }
 
 /* Creates the cursor*/
@@ -126,14 +147,20 @@ h1, h2, h3, h4, h5, p {
 .section {
     font-family: "Roboto";
     border-radius: 25px;
-    background: #cfe8f5;
-    color: #000;
+    background: #ffffff;
+    color: #000000;
     padding-left: 20px;
-    width: 90%;
-    height: 80px; 
     margin-left: 100px;
-    line-height: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 90%;
+    height: 60px; 
+    line-height: 60px;
     clear: both;
+}
+
+.anchor {
+    scroll-margin-top: 100px;
 }
 
 .imgmyself {
@@ -141,7 +168,7 @@ h1, h2, h3, h4, h5, p {
     width: 200px;
     height: 200px; 
     border: 5px solid #99d1f0;
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 .aboutmyself {
@@ -150,7 +177,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .skillssection {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 footer {
